@@ -77,7 +77,6 @@
 
             embedded_svc.addEventHandler("onAgentMessage", function(data) {
                 console.log("onAgentMessage event was fired.  liveAgentSessionKey was " + data.liveAgentSessionKey);
-                <input type= "hidden" name= "liveagent.prechat.findorcreate.map.doFind: String entityName" value= "String fieldName, Boolean find;" />
 
             });
 

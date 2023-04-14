@@ -22,7 +22,6 @@
                 "displayToAgent": true
             }, {
                 "label": "Email",
-                "value": "john.doe@salesforce.com",
                 "displayToAgent": true
             }];
 

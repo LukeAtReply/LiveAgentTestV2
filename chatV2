@@ -29,7 +29,6 @@
 				"fieldName":"FirstName",
 				"isExactMatch":true,
 				"label":"First Name",
-				"transcriptFields": ["HME_First_Name__c"]
 				}, 
 				{
 				"doCreate":false,
@@ -40,6 +39,11 @@
 				"transcriptFields": ["HME_Email__c"]
 				}],
 				"entityName":"Contact",
+			},
+			{  
+				"label":"First Name",
+				"transcriptFields":[ "HME_First_Name__c" ],
+				"displayToAgent":true
 			}];
 	
 			//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)

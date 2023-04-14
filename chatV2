@@ -1,3 +1,4 @@
+<html>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
@@ -58,6 +59,10 @@
             console.log("onQueueUpdate event was fired. liveAgentSessionKey was " + data.liveAgentSessionKey + "and queuePosition was " + data.queuePosition);
         });
 
+        embedded_svc.addEventHandler("onAgentMessage", function(data) {
+            console.log("onAgentMessage event was fired.  liveAgentSessionKey was " + data.liveAgentSessionKey);
+        });
+
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
@@ -89,3 +94,4 @@
 		initESW('https://service.force.com');
 	}
 </script>
+</html>

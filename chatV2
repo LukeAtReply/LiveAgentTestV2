@@ -21,6 +21,7 @@
 				"fieldName":"LastName",
 				"isExactMatch":true,
 				"label":"Last Name",
+				"value":'Test'
 				}, 
 				{
 				"doCreate":false,

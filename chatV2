@@ -21,20 +21,23 @@
 				"fieldName":"LastName",
 				"isExactMatch":true,
 				"label":"Last Name",
+				"transcriptFields": ["HME_Last_Name__c"]
 				}, 
 				{
 				"doCreate":false,
 				"doFind":true,
 				"fieldName":"FirstName",
 				"isExactMatch":true,
-				"label":"First Name"
+				"label":"First Name",
+				"transcriptFields": ["HME_First_Name__c"]
 				}, 
 				{
 				"doCreate":false,
 				"doFind":true,
 				"fieldName":"Email",
 				"isExactMatch":true,
-				"label":"Email"
+				"label":"Email",
+				"transcriptFields": ["HME_Email__c"]
 				}],
 				"entityName":"Contact",
 			}];

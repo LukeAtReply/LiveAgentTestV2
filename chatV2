@@ -41,7 +41,7 @@
 				"entityName":"Contact",
 			},
 			{  
-				"label":"First Name",
+				"label":"Next",
 				"transcriptFields":[ "HME_First_Name__c" ],
 				"displayToAgent":true
 			}];

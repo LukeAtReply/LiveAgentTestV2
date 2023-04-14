@@ -52,6 +52,22 @@
                 "label":"Email"
                 }],
                 "entityName":"Contact",
+            },
+            {
+                "entityFieldMaps": [{
+                    "doCreate": true,
+                    "doFind": false,
+                    "fieldName": "SuppliedName",
+                    "isExactMatch": true,
+                    "label": "Last Name"
+                  }, {
+                    "doCreate": true,
+                    "doFind": false,
+                    "fieldName": "SuppliedEmail",
+                    "isExactMatch": true,
+                    "label": "Email"
+                  }],
+                  "entityName": "Case"    
             }];
 
 

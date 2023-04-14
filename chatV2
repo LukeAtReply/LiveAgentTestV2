@@ -7,9 +7,6 @@
 		.embeddedServiceHelpButton .helpButton .uiButton:focus {
 			outline: 1px solid #005290;
 		}
-		.inputSplitName {
-			display: none!important;
-		}
 	</style>
 	
 	<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -17,17 +14,13 @@
 		var initESW = function(gslbBaseURL) {
 			embedded_svc.settings.displayHelpButton = true; //Or false
 			embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-			embedded_svc.settings.prepopulatedPrechatFields = {
-				FirstName: "customer",
-				LastName: "<Last_Name_Here>"
-			};
 			embedded_svc.settings.extraPrechatInfo = [{
 				"entityFieldMaps": [{
 				"doCreate":false,
 				"doFind":true,
 				"fieldName":"LastName",
 				"isExactMatch":true,
-				"label":"Last Name"
+				"label":"Last Name",
 				}, 
 				{
 				"doCreate":false,
@@ -44,7 +37,6 @@
 				"label":"Email"
 				}],
 				"entityName":"Contact",
-				"linkToEntityName": ""
 			}];
 	
 			//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)

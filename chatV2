@@ -83,17 +83,39 @@
                   "entityName": "Case"    
             },
             {
+                "entityName": "Account",
+                "showOnCreate": true,
+                "linkToEntityName": "Case",
+                "linkToEntityField": "AccountId",
+                "saveToTranscript": "AccountId",
                 "entityFieldMaps": [
-                {
-                    "isExactMatch": false,
-                    "fieldName": "RecordTypeId",
-                    "doCreate": true,
-                    "doFind": false,
-                    "label": "RecordTypeId"
-                },
-                ],
-                  "entityName": "Account"    
-            }
+                    {
+                        "isExactMatch": false,
+                        "fieldName": "LastName",
+                        "doCreate": true,
+                        "doFind": false,
+                        "label": "Achternaam"
+                    },
+                    {
+                        "isExactMatch": false,
+                        "fieldName": "RecordTypeId",
+                        "doCreate": true,
+                        "doFind": false,
+                        "label": "RecordTypeId"
+                    },
+                    {
+                        "fieldName": "PersonEmail",
+                        "doCreate": true,
+                        "label": "E-mail"
+                    },
+                    {
+                        "doCreate": false,
+                        "doFind": true,
+                        "fieldName": "Email_GG__pc",
+                        "isExactMatch": true,
+                        "label": "E-mail"
+                    }]
+            },
             ];
             //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
             //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)

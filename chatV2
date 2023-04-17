@@ -43,21 +43,21 @@
                 "saveToTranscript": "ContactId",
                 "entityFieldMaps": [
                     {
-                    "doCreate":true,
+                    "doCreate":false,
                     "doFind":true,
                     "fieldName":"LastName",
                     "isExactMatch":true,
                     "label":"Last Name",
                     }, 
                     {
-                    "doCreate":true,
+                    "doCreate":false,
                     "doFind":true,
                     "fieldName":"FirstName",
                     "isExactMatch":true,
                     "label":"First Name"
                     }, 
                     {
-                    "doCreate":true,
+                    "doCreate":false,
                     "doFind":true,
                     "fieldName":"Email",
                     "isExactMatch":true,
@@ -69,14 +69,14 @@
                 "entityName": "Case",    
                 "entityFieldMaps": [
                     {
-                    "doCreate": true,
+                    "doCreate": false,
                     "doFind": false,
                     "fieldName": "SuppliedName",
                     "isExactMatch": false,
                     "label": "Last Name"
                     }, 
                     {
-                    "doCreate": true,
+                    "doCreate": false,
                     "doFind": false,
                     "fieldName": "SuppliedEmail",
                     "isExactMatch": false,

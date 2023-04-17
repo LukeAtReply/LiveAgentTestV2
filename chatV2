@@ -31,7 +31,8 @@
                 },
                 {
                 "label": "RecordTypeId",
-                "value": "0123H000000DHWNQA4"
+                "value": "0123H000000DHWNQA4",
+                "displayToAgent": true
                 }
             ];
 

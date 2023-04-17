@@ -39,21 +39,21 @@
             embedded_svc.settings.extraPrechatInfo = [{
                 "entityFieldMaps": [
                     {
-                    "doCreate":true,
+                    "doCreate":false,
                     "doFind":true,
                     "fieldName":"LastName",
                     "isExactMatch":true,
                     "label":"Last Name",
                     }, 
                     {
-                    "doCreate":true,
+                    "doCreate":false,
                     "doFind":true,
                     "fieldName":"FirstName",
                     "isExactMatch":true,
                     "label":"First Name"
                     }, 
                     {
-                    "doCreate":true,
+                    "doCreate":false,
                     "doFind":true,
                     "fieldName":"Email",
                     "isExactMatch":true,
@@ -94,7 +94,7 @@
                         "fieldName": "LastName",
                         "doCreate": true,
                         "doFind": false,
-                        "label": "Achternaam"
+                        "label": "Last Name"
                     },
                     {
                         "isExactMatch": false,
@@ -106,15 +106,9 @@
                     {
                         "fieldName": "PersonEmail",
                         "doCreate": true,
-                        "label": "E-mail"
+                        "label": "Email"
                     },
-                    {
-                        "doCreate": false,
-                        "doFind": true,
-                        "fieldName": "Email_GG__pc",
-                        "isExactMatch": true,
-                        "label": "E-mail"
-                    }]
+                   ]
             },
             ];
             //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)

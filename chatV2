@@ -91,6 +91,13 @@
                 "entityFieldMaps": [
                     {
                         "isExactMatch": false,
+                        "fieldName": "FirstName",
+                        "doCreate": true,
+                        "doFind": false,
+                        "label": "First Name"
+                    },
+                    {
+                        "isExactMatch": false,
                         "fieldName": "LastName",
                         "doCreate": true,
                         "doFind": false,

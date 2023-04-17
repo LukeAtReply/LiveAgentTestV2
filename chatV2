@@ -28,27 +28,31 @@
                 "label": "Email",
                 "transcriptFields":[ "HME_Email__c" ],
                 "displayToAgent": true
+                },
+                {
+                "label": "RecordTypeId",
+                "value": "0123H000000DHWNQA4"
                 }
             ];
 
             embedded_svc.settings.extraPrechatInfo = [{
                 "entityFieldMaps": [
                     {
-                    "doCreate":false,
+                    "doCreate":true,
                     "doFind":true,
                     "fieldName":"LastName",
                     "isExactMatch":true,
                     "label":"Last Name",
                     }, 
                     {
-                    "doCreate":false,
+                    "doCreate":true,
                     "doFind":true,
                     "fieldName":"FirstName",
                     "isExactMatch":true,
                     "label":"First Name"
                     }, 
                     {
-                    "doCreate":false,
+                    "doCreate":true,
                     "doFind":true,
                     "fieldName":"Email",
                     "isExactMatch":true,
@@ -76,6 +80,18 @@
                     }
                 ],
                   "entityName": "Case"    
+            }
+            {
+                "entityFieldMaps": [
+                {
+                    "isExactMatch": false,
+                    "fieldName": "RecordTypeId",
+                    "doCreate": true,
+                    "doFind": false,
+                    "label": "RecordTypeId"
+                },
+                ],
+                  "entityName": "Account"    
             }
             ];
             //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)

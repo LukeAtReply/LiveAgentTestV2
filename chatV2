@@ -37,6 +37,10 @@
             ];
 
             embedded_svc.settings.extraPrechatInfo = [{
+                "entityName":"Contact",
+                "linkToEntityName": "Case",
+                "linkToEntityField": "ContactId",
+                "saveToTranscript": "ContactId",
                 "entityFieldMaps": [
                     {
                     "doCreate":false,
@@ -60,10 +64,9 @@
                     "label":"Email"
                     }
                 ],
-                "entityName":"Contact",
-                "saveToTranscript": "ContactId",
             },
             {
+                "entityName": "Case",    
                 "entityFieldMaps": [
                     {
                     "doCreate": true,
@@ -80,7 +83,6 @@
                     "label": "Email"
                     }
                 ],
-                  "entityName": "Case"    
             },
             {
                 "entityName": "Account",
